@@ -1,0 +1,24 @@
+{
+  "id": "simulation/custom-world-creation",
+  "title": "Custom World Creation with SDF Format and Obstacles",
+  "description": "Overview",
+  "source": "@site/docs/simulation/custom-world-creation.md",
+  "sourceDirName": "simulation",
+  "slug": "/simulation/custom-world-creation",
+  "permalink": "/docs/simulation/custom-world-creation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/simulation/custom-world-creation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "URDF Modeling - Robot Description Format",
+    "permalink": "/docs/simulation/urdf-modeling"
+  },
+  "next": {
+    "title": "Sensor Visualization Guide Using RViz2",
+    "permalink": "/docs/simulation/sensor-visualization-rviz2"
+  }
+}

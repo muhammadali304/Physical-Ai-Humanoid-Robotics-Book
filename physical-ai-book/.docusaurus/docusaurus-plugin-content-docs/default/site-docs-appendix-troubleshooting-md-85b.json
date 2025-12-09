@@ -1,0 +1,27 @@
+{
+  "id": "appendix/troubleshooting",
+  "title": "Troubleshooting Guide - Physical AI & Humanoid Robotics",
+  "description": "Learning Objectives",
+  "source": "@site/docs/appendix/troubleshooting.md",
+  "sourceDirName": "appendix",
+  "slug": "/appendix/troubleshooting",
+  "permalink": "/docs/appendix/troubleshooting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/appendix/troubleshooting.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Autonomous Humanoid - Capstone Project",
+    "permalink": "/docs/capstone/autonomous-humanoid"
+  },
+  "next": {
+    "title": "Troubleshooting Guide for ROS 2 Installation and Setup",
+    "permalink": "/docs/appendix/troubleshooting-ros2"
+  }
+}

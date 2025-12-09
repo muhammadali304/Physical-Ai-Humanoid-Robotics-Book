@@ -1,0 +1,23 @@
+{
+  "id": "accessibility-statement",
+  "title": "Accessibility Statement",
+  "description": "Commitment to Accessibility",
+  "source": "@site/docs/accessibility-statement.md",
+  "sourceDirName": ".",
+  "slug": "/accessibility-statement",
+  "permalink": "/docs/accessibility-statement",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/accessibility-statement.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "External Service Failure Handling Examples for Robotics Applications",
+    "permalink": "/docs/appendix/external-service-failure-handling"
+  }
+}

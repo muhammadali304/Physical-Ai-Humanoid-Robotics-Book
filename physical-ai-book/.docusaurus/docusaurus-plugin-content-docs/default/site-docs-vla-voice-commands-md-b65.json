@@ -1,0 +1,27 @@
+{
+  "id": "vla/voice-commands",
+  "title": "Voice Commands - Natural Language Interaction with Robots",
+  "description": "Learning Objectives",
+  "source": "@site/docs/vla/voice-commands.md",
+  "sourceDirName": "vla",
+  "slug": "/vla/voice-commands",
+  "permalink": "/docs/vla/voice-commands",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla/voice-commands.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LLM Planning - Cognitive Planning with Large Language Models",
+    "permalink": "/docs/vla/llm-planning"
+  },
+  "next": {
+    "title": "Capstone Project Integration Guide",
+    "permalink": "/docs/capstone/capstone-project-integration-guide"
+  }
+}

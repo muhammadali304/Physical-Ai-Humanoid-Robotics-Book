@@ -1,0 +1,24 @@
+{
+  "id": "simulation/navigation-testing-environment",
+  "title": "Navigation Testing Simulation Environment",
+  "description": "Overview",
+  "source": "@site/docs/simulation/navigation-testing-environment.md",
+  "sourceDirName": "simulation",
+  "slug": "/simulation/navigation-testing-environment",
+  "permalink": "/docs/simulation/navigation-testing-environment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/simulation/navigation-testing-environment.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "FPS Validation Process for Physics Simulation",
+    "permalink": "/docs/simulation/fps-validation-process"
+  },
+  "next": {
+    "title": "Troubleshooting Guide for Simulation-Specific Issues",
+    "permalink": "/docs/simulation/simulation-troubleshooting"
+  }
+}

@@ -1,0 +1,108 @@
+.robotImageContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.robotImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.robotSvg {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.robotSvg:hover {
+  transform: scale(1.05) rotate(1deg);
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
+}
+
+.eyeGlow {
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.antennaGlow {
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.glowEffect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(246, 224, 94, 0.2) 0%, transparent 70%);
+  animation: glow 3s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 996px) {
+  .robotImageContainer {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+  }
+
+  .glowEffect {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .robotImageContainer {
+    width: 120px;
+    height: 120px;
+    margin: 0.5rem auto;
+  }
+
+  .glowEffect {
+    width: 140px;
+    height: 140px;
+  }
+}

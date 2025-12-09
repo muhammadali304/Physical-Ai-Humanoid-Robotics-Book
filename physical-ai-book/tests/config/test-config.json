@@ -1,0 +1,24 @@
+{
+  "vm": {
+    "os": "Ubuntu 22.04",
+    "memory": "8GB",
+    "cpus": 4,
+    "disk": "50GB"
+  },
+  "testing": {
+    "timeout_seconds": 60,
+    "parallel_tests": 1,
+    "report_format": "json",
+    "include_code_coverage": false
+  },
+  "environments": {
+    "ros2": {
+      "distribution": "humble",
+      "workspace_path": "~/ros2_ws"
+    },
+    "python": {
+      "version": "3.10",
+      "requirements_file": "requirements.txt"
+    }
+  }
+}

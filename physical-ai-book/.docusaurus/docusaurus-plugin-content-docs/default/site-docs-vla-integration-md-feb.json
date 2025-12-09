@@ -1,0 +1,27 @@
+{
+  "id": "vla/integration",
+  "title": "VLA Integration - Vision-Language-Action Systems",
+  "description": "Learning Objectives",
+  "source": "@site/docs/vla/integration.md",
+  "sourceDirName": "vla",
+  "slug": "/vla/integration",
+  "permalink": "/docs/vla/integration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla/integration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Edge Device Optimization Techniques for Robotics",
+    "permalink": "/docs/isaac-platform/edge-device-optimization-techniques"
+  },
+  "next": {
+    "title": "LLM Planning - Cognitive Planning with Large Language Models",
+    "permalink": "/docs/vla/llm-planning"
+  }
+}
