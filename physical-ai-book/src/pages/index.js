@@ -23,7 +23,7 @@ function HomepageHeader() {
               </Link>
               <Link
                 className="button button--primary button--lg"
-                to="/docs/category/setup">
+                to="/docs/setup/ubuntu-preparation">
                 Start Setup Guide
               </Link>
             </div>
@@ -107,13 +107,13 @@ export default function Home() {
               <div className="col col--3">
                 <div className="card">
                   <div className="card__header text--center">
-                    <h3>Foundation</h3>
+                    <h3>The Robotic Nervous System (ROS 2)</h3>
                   </div>
                   <div className="card__body">
                     <p>Learn the fundamentals of Physical AI, ROS 2, and environment setup.</p>
                   </div>
                   <div className="card__footer text--center">
-                    <Link className="button button--primary button--block" to="/docs/category/setup">
+                    <Link className="button button--primary button--block" to="/docs/ros2-fundamentals/nodes-topics">
                       Start Learning
                     </Link>
                   </div>
@@ -122,13 +122,13 @@ export default function Home() {
               <div className="col col--3">
                 <div className="card">
                   <div className="card__header text--center">
-                    <h3>Simulation</h3>
+                    <h3>The Digital Twin (Gazebo & Unity)</h3>
                   </div>
                   <div className="card__body">
                     <p>Build physics-accurate robot simulations with Gazebo and advanced modeling.</p>
                   </div>
                   <div className="card__footer text--center">
-                    <Link className="button button--primary button--block" to="/docs/category/simulation">
+                    <Link className="button button--primary button--block" to="/docs/simulation/gazebo-installation">
                       Start Learning
                     </Link>
                   </div>
@@ -137,13 +137,13 @@ export default function Home() {
               <div className="col col--3">
                 <div className="card">
                   <div className="card__header text--center">
-                    <h3>Perception & Navigation</h3>
+                    <h3>The AI-Robot Brain (NVIDIA Isaac™)</h3>
                   </div>
                   <div className="card__body">
                     <p>Implement perception, navigation, and VSLAM systems for autonomous robots.</p>
                   </div>
                   <div className="card__footer text--center">
-                    <Link className="button button--primary button--block" to="/docs/category/isaac-platform">
+                    <Link className="button button--primary button--block" to="/docs/isaac-platform/isaac-ros-installation">
                       Start Learning
                     </Link>
                   </div>
@@ -152,13 +152,13 @@ export default function Home() {
               <div className="col col--3">
                 <div className="card">
                   <div className="card__header text--center">
-                    <h3>Intelligence</h3>
+                    <h3>Vision-Language-Action (VLA)</h3>
                   </div>
                   <div className="card__body">
                     <p>Integrate LLMs, voice control, and advanced AI for autonomous behavior.</p>
                   </div>
                   <div className="card__footer text--center">
-                    <Link className="button button--primary button--block" to="/docs/category/vla">
+                    <Link className="button button--primary button--block" to="/docs/vla/integration">
                       Start Learning
                     </Link>
                   </div>

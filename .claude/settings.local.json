@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p physical-ai-book/docs/ros2-fundamentals)",
+      "Bash(mkdir -p physical-ai-book/docs/simulation)",
+      "Bash(mkdir -p physical-ai-book/docs/isaac-platform)",
+      "Bash(mkdir -p physical-ai-book/docs/vla)",
+      "Bash(npm init -y)",
+      "Bash(npx create-docusaurus@latest . classic)",
+      "Bash(cat \"C:\\Users\\dell\\Documents\\Quarter 4\\Class-Work\\specs\\1-physical-ai-humanoid-robotics\\tasks.md\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -25,13 +25,13 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "C:\\Users\\dell\\Documents\\Quarter 4\\Class-Work\\physical-ai-book\\sidebars.js",
+          "sidebarPath": "C:\\Users\\dell\\Documents\\Quarter 4\\Hackathon\\physical-ai-book\\sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           "routeBasePath": "/docs"
         },
         "blog": false,
         "theme": {
-          "customCss": "C:\\Users\\dell\\Documents\\Quarter 4\\Class-Work\\physical-ai-book\\src\\css\\custom.css"
+          "customCss": "C:\\Users\\dell\\Documents\\Quarter 4\\Hackathon\\physical-ai-book\\src\\css\\custom.css"
         }
       }
     ]
@@ -55,17 +55,7 @@ export default {
           "label": "Documentation"
         },
         {
-          "to": "/#what-youll-achieve",
-          "label": "Learning Outcomes",
-          "position": "left"
-        },
-        {
-          "to": "/#learning-modules",
-          "label": "Modules",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/muhammadali304/Physical-Ai-Humanoid-Robotics-Book",
           "label": "GitHub",
           "position": "right"
         }

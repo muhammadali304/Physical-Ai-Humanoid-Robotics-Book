@@ -95,18 +95,18 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+          // {
+          //   to: '/#what-youll-achieve',
+          //   label: 'Learning Outcomes',
+          //   position: 'left',
+          // },
+          // {
+          //   to: '/#learning-modules',
+          //   label: 'Modules',
+          //   position: 'left',
+          // },
           {
-            to: '/#what-youll-achieve',
-            label: 'Learning Outcomes',
-            position: 'left',
-          },
-          {
-            to: '/#learning-modules',
-            label: 'Modules',
-            position: 'left',
-          },
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/muhammadali304/Physical-Ai-Humanoid-Robotics-Book',
             label: 'GitHub',
             position: 'right',
           },
