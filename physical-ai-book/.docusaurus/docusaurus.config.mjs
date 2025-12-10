@@ -100,7 +100,7 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/muhammadali304/Physical-Ai-Humanoid-Robotics-Book"
             }
           ]
         }
