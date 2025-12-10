@@ -1,17 +1,20 @@
 #!/usr/bin/env node
 
-const { build } = require('@docusaurus/core');
 const path = require('path');
 
-const siteDir = path.join(__dirname, '..');
-const config = path.join(siteDir, 'docusaurus.config.js');
-
+// Dynamically import @docusaurus/core to avoid issues with module resolution
 async function runBuild() {
   try {
+    const docusaurus = await import('@docusaurus/core');
+    const { build } = docusaurus;
+
+    const siteDir = path.join(__dirname, '..');
+    const configPath = path.join(siteDir, 'docusaurus.config.js');
+
     await build(siteDir, {
       bundleAnalyzer: false,
       outDir: path.join(siteDir, 'build'),
-      config,
+      config: configPath,
       minify: true,
     });
     console.log('Build completed successfully!');
