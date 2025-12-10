@@ -17,7 +17,7 @@ const config = {
   organizationName: '', // Usually your GitHub org/user name.
   projectName: '', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful

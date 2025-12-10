@@ -9,9 +9,9 @@ export default {
   "favicon": "img/favicon.ico",
   "url": "https://physical-ai-humanoid-robotics-book-k7tf-qtqs4may9.vercel.app",
   "baseUrl": "/",
-  "organizationName": "muhammadali304",
-  "projectName": "Physical-Ai-Humanoid-Robotics-Book",
-  "onBrokenLinks": "throw",
+  "organizationName": "",
+  "projectName": "",
+  "onBrokenLinks": "warn",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -100,7 +100,7 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/muhammadali304/Physical-Ai-Humanoid-Robotics-Book"
+              "href": "https://github.com/facebook/docusaurus"
             }
           ]
         }
