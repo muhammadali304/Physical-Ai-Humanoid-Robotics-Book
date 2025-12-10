@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://physical-ai-humanoid-robotics-book-self.vercel.app/',
+  url: 'https://physical-ai-humanoid-robotics-book-seven-dun.vercel.app/',
   // Set the /<base>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<org-name>/<repo-name>/'
   baseUrl: '/',
