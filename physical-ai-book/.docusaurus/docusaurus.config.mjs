@@ -7,10 +7,10 @@ export default {
   "title": "Physical AI & Humanoid Robotics",
   "tagline": "A Comprehensive Educational Book on Physical AI and Humanoid Robotics",
   "favicon": "img/favicon.ico",
-  "url": "https://physical-ai-humanoid-robotics-book-self.vercel.app",
+  "url": "https://physical-ai-humanoid-robotics-book-k7tf-qtqs4may9.vercel.app",
   "baseUrl": "/",
-  "organizationName": "your-organization",
-  "projectName": "your-project",
+  "organizationName": "muhammadali304",
+  "projectName": "Physical-Ai-Humanoid-Robotics-Book",
   "onBrokenLinks": "throw",
   "i18n": {
     "defaultLocale": "en",
