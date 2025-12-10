@@ -143,7 +143,8 @@ export default function Home() {
                     <p>Implement perception, navigation, and VSLAM systems for autonomous robots.</p>
                   </div>
                   <div className="card__footer text--center">
-                    <Link className="button button--primary button--block" to="/docs/isaac-platform/isaac-ros-installation">
+                    <Link className="button button--primary button--block" to="/docs/isaac-platform/isaac-ros-installation
+                    ">
                       Start Learning
                     </Link>
                   </div>
