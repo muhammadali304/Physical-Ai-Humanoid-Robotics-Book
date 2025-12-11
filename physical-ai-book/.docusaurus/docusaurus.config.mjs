@@ -7,7 +7,7 @@ export default {
   "title": "Physical AI & Humanoid Robotics",
   "tagline": "A Comprehensive Educational Book on Physical AI and Humanoid Robotics",
   "favicon": "img/favicon.ico",
-  "url": "https://physical-ai-humanoid-robotics-book-flax.vercel.app/",
+  "url": "https://physical-ai-humanoid-robotics-book-k7tf-qtqs4may9.vercel.app",
   "baseUrl": "/",
   "organizationName": "",
   "projectName": "",
