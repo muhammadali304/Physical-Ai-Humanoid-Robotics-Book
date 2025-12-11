@@ -11,7 +11,7 @@ const config = {
   url: 'https://physical-ai-humanoid-robotics-book-flax.vercel.app/',
   // Set the /<base>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<org-name>/<repo-name>/'
-  baseUrl: './',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: '', // Usually your GitHub org/user name.
