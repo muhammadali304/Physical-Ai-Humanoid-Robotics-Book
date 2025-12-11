@@ -30,7 +30,7 @@ async function runBuild() {
       }
     }
 
-    const siteDir = path.join(__dirname, '..');
+    const siteDir = path.join(__dirname, '..'); // Site directory is one level up from scripts/
     const configPath = path.join(siteDir, 'docusaurus.config.js');
 
     await build(siteDir, {
