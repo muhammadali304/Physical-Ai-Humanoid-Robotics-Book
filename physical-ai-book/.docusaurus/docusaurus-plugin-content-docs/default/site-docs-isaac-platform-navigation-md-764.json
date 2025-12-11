@@ -5,7 +5,7 @@
   "source": "@site/docs/isaac-platform/navigation.md",
   "sourceDirName": "isaac-platform",
   "slug": "/isaac-platform/navigation",
-  "permalink": "/docs/isaac-platform/navigation",
+  "permalink": "/./docs/isaac-platform/navigation",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/isaac-platform/navigation.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Perception Pipeline Integration with Navigation System",
-    "permalink": "/docs/isaac-platform/perception-navigation-integration"
+    "permalink": "/./docs/isaac-platform/perception-navigation-integration"
   },
   "next": {
     "title": "Navigation Validation Guide",
-    "permalink": "/docs/isaac-platform/navigation-validation-guide"
+    "permalink": "/./docs/isaac-platform/navigation-validation-guide"
   }
 }

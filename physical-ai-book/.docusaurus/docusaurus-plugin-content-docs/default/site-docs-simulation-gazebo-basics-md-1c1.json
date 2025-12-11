@@ -5,7 +5,7 @@
   "source": "@site/docs/simulation/gazebo-basics.md",
   "sourceDirName": "simulation",
   "slug": "/simulation/gazebo-basics",
-  "permalink": "/docs/simulation/gazebo-basics",
+  "permalink": "/./docs/simulation/gazebo-basics",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/simulation/gazebo-basics.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Gazebo Fortress Simulation Environment Installation Guide",
-    "permalink": "/docs/simulation/gazebo-installation"
+    "permalink": "/./docs/simulation/gazebo-installation"
   },
   "next": {
     "title": "URDF Modeling - Robot Description Format",
-    "permalink": "/docs/simulation/urdf-modeling"
+    "permalink": "/./docs/simulation/urdf-modeling"
   }
 }

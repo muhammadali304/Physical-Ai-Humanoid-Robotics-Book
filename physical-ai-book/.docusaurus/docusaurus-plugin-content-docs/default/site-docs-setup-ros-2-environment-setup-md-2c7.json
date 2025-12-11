@@ -5,7 +5,7 @@
   "source": "@site/docs/setup/ros2-environment-setup.md",
   "sourceDirName": "setup",
   "slug": "/setup/ros2-environment-setup",
-  "permalink": "/docs/setup/ros2-environment-setup",
+  "permalink": "/./docs/setup/ros2-environment-setup",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/setup/ros2-environment-setup.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "ROS 2 Humble Hawksbill Installation and Setup",
-    "permalink": "/docs/setup/ros2-setup"
+    "permalink": "/./docs/setup/ros2-setup"
   },
   "next": {
     "title": "ROS 2 Workspace Structure",
-    "permalink": "/docs/setup/ros2-workspace-structure"
+    "permalink": "/./docs/setup/ros2-workspace-structure"
   }
 }

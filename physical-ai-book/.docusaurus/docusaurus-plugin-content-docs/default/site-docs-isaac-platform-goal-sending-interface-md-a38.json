@@ -5,7 +5,7 @@
   "source": "@site/docs/isaac-platform/goal-sending-interface.md",
   "sourceDirName": "isaac-platform",
   "slug": "/isaac-platform/goal-sending-interface",
-  "permalink": "/docs/isaac-platform/goal-sending-interface",
+  "permalink": "/./docs/isaac-platform/goal-sending-interface",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/isaac-platform/goal-sending-interface.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Navigation Validation Guide",
-    "permalink": "/docs/isaac-platform/navigation-validation-guide"
+    "permalink": "/./docs/isaac-platform/navigation-validation-guide"
   },
   "next": {
     "title": "Perception Pipeline Performance Benchmark Guide",
-    "permalink": "/docs/isaac-platform/perception-performance-benchmark"
+    "permalink": "/./docs/isaac-platform/perception-performance-benchmark"
   }
 }

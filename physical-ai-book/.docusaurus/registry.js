@@ -1,5 +1,4 @@
 export default {
-  "0058b4c6": [() => import(/* webpackChunkName: "0058b4c6" */ "@generated/docusaurus-plugin-content-docs/default/p/docs-175.json"), "@generated/docusaurus-plugin-content-docs/default/p/docs-175.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/p/docs-175.json")],
   "038364c3": [() => import(/* webpackChunkName: "038364c3" */ "@site/docs/setup/ubuntu-preparation.md"), "@site/docs/setup/ubuntu-preparation.md", require.resolveWeak("@site/docs/setup/ubuntu-preparation.md")],
   "0e384e19": [() => import(/* webpackChunkName: "0e384e19" */ "@site/docs/intro.md"), "@site/docs/intro.md", require.resolveWeak("@site/docs/intro.md")],
   "0f1c667d": [() => import(/* webpackChunkName: "0f1c667d" */ "@site/docs/setup/validation-testing.md"), "@site/docs/setup/validation-testing.md", require.resolveWeak("@site/docs/setup/validation-testing.md")],
@@ -39,6 +38,7 @@ export default {
   "a90fec0b": [() => import(/* webpackChunkName: "a90fec0b" */ "@site/docs/isaac-platform/robot-localization-amcl.md"), "@site/docs/isaac-platform/robot-localization-amcl.md", require.resolveWeak("@site/docs/isaac-platform/robot-localization-amcl.md")],
   "a94703ab": [() => import(/* webpackChunkName: "a94703ab" */ "@theme/DocRoot"), "@theme/DocRoot", require.resolveWeak("@theme/DocRoot")],
   "aba21aa0": [() => import(/* webpackChunkName: "aba21aa0" */ "@generated/docusaurus-plugin-content-docs/default/__plugin.json"), "@generated/docusaurus-plugin-content-docs/default/__plugin.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/__plugin.json")],
+  "ad1a14f3": [() => import(/* webpackChunkName: "ad1a14f3" */ "@generated/docusaurus-plugin-content-docs/default/p/docs-ad9.json"), "@generated/docusaurus-plugin-content-docs/default/p/docs-ad9.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/p/docs-ad9.json")],
   "b1287e91": [() => import(/* webpackChunkName: "b1287e91" */ "@site/docs/isaac-platform/isaac-sim-intro.md"), "@site/docs/isaac-platform/isaac-sim-intro.md", require.resolveWeak("@site/docs/isaac-platform/isaac-sim-intro.md")],
   "b2f6feba": [() => import(/* webpackChunkName: "b2f6feba" */ "@site/docs/setup/ros2-setup.md"), "@site/docs/setup/ros2-setup.md", require.resolveWeak("@site/docs/setup/ros2-setup.md")],
   "b65d29a1": [() => import(/* webpackChunkName: "b65d29a1" */ "@site/docs/vla/voice-commands.md"), "@site/docs/vla/voice-commands.md", require.resolveWeak("@site/docs/vla/voice-commands.md")],

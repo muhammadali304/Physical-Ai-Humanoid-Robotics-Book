@@ -5,7 +5,7 @@
   "source": "@site/docs/isaac-platform/nav2-setup-guide.md",
   "sourceDirName": "isaac-platform",
   "slug": "/isaac-platform/nav2-setup-guide",
-  "permalink": "/docs/isaac-platform/nav2-setup-guide",
+  "permalink": "/./docs/isaac-platform/nav2-setup-guide",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/isaac-platform/nav2-setup-guide.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Isaac ROS Perception Packages Setup Guide",
-    "permalink": "/docs/isaac-platform/isaac-ros-perception-setup"
+    "permalink": "/./docs/isaac-platform/isaac-ros-perception-setup"
   },
   "next": {
     "title": "VSLAM Pipeline Configuration for Isaac ROS",
-    "permalink": "/docs/isaac-platform/vsland-pipeline-configuration"
+    "permalink": "/./docs/isaac-platform/vsland-pipeline-configuration"
   }
 }

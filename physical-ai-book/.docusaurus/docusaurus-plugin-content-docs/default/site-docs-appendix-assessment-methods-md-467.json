@@ -5,7 +5,7 @@
   "source": "@site/docs/appendix/assessment-methods.md",
   "sourceDirName": "appendix",
   "slug": "/appendix/assessment-methods",
-  "permalink": "/docs/appendix/assessment-methods",
+  "permalink": "/./docs/appendix/assessment-methods",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/appendix/assessment-methods.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Security Best Practices for Robotics Applications",
-    "permalink": "/docs/appendix/security-best-practices"
+    "permalink": "/./docs/appendix/security-best-practices"
   },
   "next": {
     "title": "External Service Failure Handling Examples for Robotics Applications",
-    "permalink": "/docs/appendix/external-service-failure-handling"
+    "permalink": "/./docs/appendix/external-service-failure-handling"
   }
 }

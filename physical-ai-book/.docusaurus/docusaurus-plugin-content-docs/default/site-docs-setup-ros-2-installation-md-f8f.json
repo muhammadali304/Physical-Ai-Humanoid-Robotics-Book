@@ -5,7 +5,7 @@
   "source": "@site/docs/setup/ros2-installation.md",
   "sourceDirName": "setup",
   "slug": "/setup/ros2-installation",
-  "permalink": "/docs/setup/ros2-installation",
+  "permalink": "/./docs/setup/ros2-installation",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/setup/ros2-installation.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Ubuntu Installation and System Preparation",
-    "permalink": "/docs/setup/ubuntu-installation"
+    "permalink": "/./docs/setup/ubuntu-installation"
   },
   "next": {
     "title": "ROS 2 Humble Hawksbill Installation and Setup",
-    "permalink": "/docs/setup/ros2-setup"
+    "permalink": "/./docs/setup/ros2-setup"
   }
 }

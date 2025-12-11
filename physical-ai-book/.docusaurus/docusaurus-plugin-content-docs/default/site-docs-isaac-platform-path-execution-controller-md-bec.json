@@ -5,7 +5,7 @@
   "source": "@site/docs/isaac-platform/path-execution-controller.md",
   "sourceDirName": "isaac-platform",
   "slug": "/isaac-platform/path-execution-controller",
-  "permalink": "/docs/isaac-platform/path-execution-controller",
+  "permalink": "/./docs/isaac-platform/path-execution-controller",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/isaac-platform/path-execution-controller.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Path Planning Algorithms Implementation",
-    "permalink": "/docs/isaac-platform/path-planning-algorithms"
+    "permalink": "/./docs/isaac-platform/path-planning-algorithms"
   },
   "next": {
     "title": "Perception Pipeline Integration with Navigation System",
-    "permalink": "/docs/isaac-platform/perception-navigation-integration"
+    "permalink": "/./docs/isaac-platform/perception-navigation-integration"
   }
 }

@@ -1,298 +1,298 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/./docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/./docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "accessibility-statement",
-              "path": "/docs/accessibility-statement",
+              "path": "/./docs/accessibility-statement",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "appendix/assessment-methods",
-              "path": "/docs/appendix/assessment-methods",
+              "path": "/./docs/appendix/assessment-methods",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "appendix/external-service-failure-handling",
-              "path": "/docs/appendix/external-service-failure-handling",
+              "path": "/./docs/appendix/external-service-failure-handling",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "appendix/hardware-guide",
-              "path": "/docs/appendix/hardware-guide",
+              "path": "/./docs/appendix/hardware-guide",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "appendix/security-best-practices",
-              "path": "/docs/appendix/security-best-practices",
+              "path": "/./docs/appendix/security-best-practices",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "appendix/troubleshooting",
-              "path": "/docs/appendix/troubleshooting",
+              "path": "/./docs/appendix/troubleshooting",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "appendix/troubleshooting-ros2",
-              "path": "/docs/appendix/troubleshooting-ros2",
+              "path": "/./docs/appendix/troubleshooting-ros2",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "capstone/autonomous-humanoid",
-              "path": "/docs/capstone/autonomous-humanoid",
+              "path": "/./docs/capstone/autonomous-humanoid",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "capstone/capstone-project-integration-guide",
-              "path": "/docs/capstone/capstone-project-integration-guide",
+              "path": "/./docs/capstone/capstone-project-integration-guide",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/intro",
+              "path": "/./docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/costmap-configuration",
-              "path": "/docs/isaac-platform/costmap-configuration",
+              "path": "/./docs/isaac-platform/costmap-configuration",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/edge-device-optimization-techniques",
-              "path": "/docs/isaac-platform/edge-device-optimization-techniques",
+              "path": "/./docs/isaac-platform/edge-device-optimization-techniques",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/goal-sending-interface",
-              "path": "/docs/isaac-platform/goal-sending-interface",
+              "path": "/./docs/isaac-platform/goal-sending-interface",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/isaac-ros-installation",
-              "path": "/docs/isaac-platform/isaac-ros-installation",
+              "path": "/./docs/isaac-platform/isaac-ros-installation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/isaac-ros-perception",
-              "path": "/docs/isaac-platform/isaac-ros-perception",
+              "path": "/./docs/isaac-platform/isaac-ros-perception",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/isaac-ros-perception-setup",
-              "path": "/docs/isaac-platform/isaac-ros-perception-setup",
+              "path": "/./docs/isaac-platform/isaac-ros-perception-setup",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/isaac-sim-intro",
-              "path": "/docs/isaac-platform/isaac-sim-intro",
+              "path": "/./docs/isaac-platform/isaac-sim-intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/isaac-sim-rl-setup-guide",
-              "path": "/docs/isaac-platform/isaac-sim-rl-setup-guide",
+              "path": "/./docs/isaac-platform/isaac-sim-rl-setup-guide",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/llm-integration-guide",
-              "path": "/docs/isaac-platform/llm-integration-guide",
+              "path": "/./docs/isaac-platform/llm-integration-guide",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/nav2-setup-guide",
-              "path": "/docs/isaac-platform/nav2-setup-guide",
+              "path": "/./docs/isaac-platform/nav2-setup-guide",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/navigation",
-              "path": "/docs/isaac-platform/navigation",
+              "path": "/./docs/isaac-platform/navigation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/navigation-validation-guide",
-              "path": "/docs/isaac-platform/navigation-validation-guide",
+              "path": "/./docs/isaac-platform/navigation-validation-guide",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/path-execution-controller",
-              "path": "/docs/isaac-platform/path-execution-controller",
+              "path": "/./docs/isaac-platform/path-execution-controller",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/path-planning-algorithms",
-              "path": "/docs/isaac-platform/path-planning-algorithms",
+              "path": "/./docs/isaac-platform/path-planning-algorithms",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/perception-navigation-integration",
-              "path": "/docs/isaac-platform/perception-navigation-integration",
+              "path": "/./docs/isaac-platform/perception-navigation-integration",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/perception-performance-benchmark",
-              "path": "/docs/isaac-platform/perception-performance-benchmark",
+              "path": "/./docs/isaac-platform/perception-performance-benchmark",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/robot-localization-amcl",
-              "path": "/docs/isaac-platform/robot-localization-amcl",
+              "path": "/./docs/isaac-platform/robot-localization-amcl",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/robot-manipulation-rl-example",
-              "path": "/docs/isaac-platform/robot-manipulation-rl-example",
+              "path": "/./docs/isaac-platform/robot-manipulation-rl-example",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/sim-to-real-transfer-jetson-guide",
-              "path": "/docs/isaac-platform/sim-to-real-transfer-jetson-guide",
+              "path": "/./docs/isaac-platform/sim-to-real-transfer-jetson-guide",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/voice-command-processing-system",
-              "path": "/docs/isaac-platform/voice-command-processing-system",
+              "path": "/./docs/isaac-platform/voice-command-processing-system",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "isaac-platform/vsland-pipeline-configuration",
-              "path": "/docs/isaac-platform/vsland-pipeline-configuration",
+              "path": "/./docs/isaac-platform/vsland-pipeline-configuration",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ros2-fundamentals/nodes-topics",
-              "path": "/docs/ros2-fundamentals/nodes-topics",
+              "path": "/./docs/ros2-fundamentals/nodes-topics",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ros2-fundamentals/packages",
-              "path": "/docs/ros2-fundamentals/packages",
+              "path": "/./docs/ros2-fundamentals/packages",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ros2-fundamentals/services-actions",
-              "path": "/docs/ros2-fundamentals/services-actions",
+              "path": "/./docs/ros2-fundamentals/services-actions",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "setup/performance-benchmark",
-              "path": "/docs/setup/performance-benchmark",
+              "path": "/./docs/setup/performance-benchmark",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "setup/ros2-environment-setup",
-              "path": "/docs/setup/ros2-environment-setup",
+              "path": "/./docs/setup/ros2-environment-setup",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "setup/ros2-installation",
-              "path": "/docs/setup/ros2-installation",
+              "path": "/./docs/setup/ros2-installation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "setup/ros2-setup",
-              "path": "/docs/setup/ros2-setup",
+              "path": "/./docs/setup/ros2-setup",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "setup/ros2-workspace-structure",
-              "path": "/docs/setup/ros2-workspace-structure",
+              "path": "/./docs/setup/ros2-workspace-structure",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "setup/running-examples",
-              "path": "/docs/setup/running-examples",
+              "path": "/./docs/setup/running-examples",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "setup/ubuntu-installation",
-              "path": "/docs/setup/ubuntu-installation",
+              "path": "/./docs/setup/ubuntu-installation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "setup/ubuntu-preparation",
-              "path": "/docs/setup/ubuntu-preparation",
+              "path": "/./docs/setup/ubuntu-preparation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "setup/validation-testing",
-              "path": "/docs/setup/validation-testing",
+              "path": "/./docs/setup/validation-testing",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/custom-world-creation",
-              "path": "/docs/simulation/custom-world-creation",
+              "path": "/./docs/simulation/custom-world-creation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/fps-validation-process",
-              "path": "/docs/simulation/fps-validation-process",
+              "path": "/./docs/simulation/fps-validation-process",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/gazebo-basics",
-              "path": "/docs/simulation/gazebo-basics",
+              "path": "/./docs/simulation/gazebo-basics",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/gazebo-installation",
-              "path": "/docs/simulation/gazebo-installation",
+              "path": "/./docs/simulation/gazebo-installation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/navigation-testing-environment",
-              "path": "/docs/simulation/navigation-testing-environment",
+              "path": "/./docs/simulation/navigation-testing-environment",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/physics-performance-optimization",
-              "path": "/docs/simulation/physics-performance-optimization",
+              "path": "/./docs/simulation/physics-performance-optimization",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/sensor-data-verification",
-              "path": "/docs/simulation/sensor-data-verification",
+              "path": "/./docs/simulation/sensor-data-verification",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/sensor-visualization-rviz2",
-              "path": "/docs/simulation/sensor-visualization-rviz2",
+              "path": "/./docs/simulation/sensor-visualization-rviz2",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/simulation-troubleshooting",
-              "path": "/docs/simulation/simulation-troubleshooting",
+              "path": "/./docs/simulation/simulation-troubleshooting",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/unity-integration",
-              "path": "/docs/simulation/unity-integration",
+              "path": "/./docs/simulation/unity-integration",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "simulation/urdf-modeling",
-              "path": "/docs/simulation/urdf-modeling",
+              "path": "/./docs/simulation/urdf-modeling",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "vla/integration",
-              "path": "/docs/vla/integration",
+              "path": "/./docs/vla/integration",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "vla/llm-planning",
-              "path": "/docs/vla/llm-planning",
+              "path": "/./docs/vla/llm-planning",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "vla/voice-commands",
-              "path": "/docs/vla/voice-commands",
+              "path": "/./docs/vla/voice-commands",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -300,7 +300,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
+                "path": "/./docs/intro",
                 "label": "intro"
               }
             }

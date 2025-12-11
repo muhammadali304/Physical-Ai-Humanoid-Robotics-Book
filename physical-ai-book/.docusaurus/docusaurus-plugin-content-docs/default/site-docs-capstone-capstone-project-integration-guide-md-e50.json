@@ -5,7 +5,7 @@
   "source": "@site/docs/capstone/capstone-project-integration-guide.md",
   "sourceDirName": "capstone",
   "slug": "/capstone/capstone-project-integration-guide",
-  "permalink": "/docs/capstone/capstone-project-integration-guide",
+  "permalink": "/./docs/capstone/capstone-project-integration-guide",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/capstone/capstone-project-integration-guide.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Voice Commands - Natural Language Interaction with Robots",
-    "permalink": "/docs/vla/voice-commands"
+    "permalink": "/./docs/vla/voice-commands"
   },
   "next": {
     "title": "Autonomous Humanoid - Capstone Project",
-    "permalink": "/docs/capstone/autonomous-humanoid"
+    "permalink": "/./docs/capstone/autonomous-humanoid"
   }
 }

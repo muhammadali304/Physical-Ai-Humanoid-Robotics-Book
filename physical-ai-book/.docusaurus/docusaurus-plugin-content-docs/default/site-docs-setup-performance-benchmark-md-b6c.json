@@ -5,7 +5,7 @@
   "source": "@site/docs/setup/performance-benchmark.md",
   "sourceDirName": "setup",
   "slug": "/setup/performance-benchmark",
-  "permalink": "/docs/setup/performance-benchmark",
+  "permalink": "/./docs/setup/performance-benchmark",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/setup/performance-benchmark.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Running and Testing ROS 2 Publisher/Subscriber Examples",
-    "permalink": "/docs/setup/running-examples"
+    "permalink": "/./docs/setup/running-examples"
   },
   "next": {
     "title": "Validation Testing for ROS 2 Setup Instructions",
-    "permalink": "/docs/setup/validation-testing"
+    "permalink": "/./docs/setup/validation-testing"
   }
 }

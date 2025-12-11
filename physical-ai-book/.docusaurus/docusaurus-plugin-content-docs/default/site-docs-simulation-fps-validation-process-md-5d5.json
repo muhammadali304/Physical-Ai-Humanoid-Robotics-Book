@@ -5,7 +5,7 @@
   "source": "@site/docs/simulation/fps-validation-process.md",
   "sourceDirName": "simulation",
   "slug": "/simulation/fps-validation-process",
-  "permalink": "/docs/simulation/fps-validation-process",
+  "permalink": "/./docs/simulation/fps-validation-process",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/simulation/fps-validation-process.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Physics Simulation Performance Optimization Guide",
-    "permalink": "/docs/simulation/physics-performance-optimization"
+    "permalink": "/./docs/simulation/physics-performance-optimization"
   },
   "next": {
     "title": "Navigation Testing Simulation Environment",
-    "permalink": "/docs/simulation/navigation-testing-environment"
+    "permalink": "/./docs/simulation/navigation-testing-environment"
   }
 }

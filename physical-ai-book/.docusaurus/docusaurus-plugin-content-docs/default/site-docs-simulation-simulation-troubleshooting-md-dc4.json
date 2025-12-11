@@ -5,7 +5,7 @@
   "source": "@site/docs/simulation/simulation-troubleshooting.md",
   "sourceDirName": "simulation",
   "slug": "/simulation/simulation-troubleshooting",
-  "permalink": "/docs/simulation/simulation-troubleshooting",
+  "permalink": "/./docs/simulation/simulation-troubleshooting",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/simulation/simulation-troubleshooting.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Navigation Testing Simulation Environment",
-    "permalink": "/docs/simulation/navigation-testing-environment"
+    "permalink": "/./docs/simulation/navigation-testing-environment"
   },
   "next": {
     "title": "Unity Integration for Robotics Simulation",
-    "permalink": "/docs/simulation/unity-integration"
+    "permalink": "/./docs/simulation/unity-integration"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/setup/running-examples.md",
   "sourceDirName": "setup",
   "slug": "/setup/running-examples",
-  "permalink": "/docs/setup/running-examples",
+  "permalink": "/./docs/setup/running-examples",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/setup/running-examples.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "ROS 2 Workspace Structure",
-    "permalink": "/docs/setup/ros2-workspace-structure"
+    "permalink": "/./docs/setup/ros2-workspace-structure"
   },
   "next": {
     "title": "Performance Benchmark Guide for ROS 2 Environment Setup",
-    "permalink": "/docs/setup/performance-benchmark"
+    "permalink": "/./docs/setup/performance-benchmark"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/vla/integration.md",
   "sourceDirName": "vla",
   "slug": "/vla/integration",
-  "permalink": "/docs/vla/integration",
+  "permalink": "/./docs/vla/integration",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla/integration.md",
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Edge Device Optimization Techniques for Robotics",
-    "permalink": "/docs/isaac-platform/edge-device-optimization-techniques"
+    "permalink": "/./docs/isaac-platform/edge-device-optimization-techniques"
   },
   "next": {
     "title": "LLM Planning - Cognitive Planning with Large Language Models",
-    "permalink": "/docs/vla/llm-planning"
+    "permalink": "/./docs/vla/llm-planning"
   }
 }

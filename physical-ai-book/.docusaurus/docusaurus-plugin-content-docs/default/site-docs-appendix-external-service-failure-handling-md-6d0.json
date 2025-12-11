@@ -5,7 +5,7 @@
   "source": "@site/docs/appendix/external-service-failure-handling.md",
   "sourceDirName": "appendix",
   "slug": "/appendix/external-service-failure-handling",
-  "permalink": "/docs/appendix/external-service-failure-handling",
+  "permalink": "/./docs/appendix/external-service-failure-handling",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/appendix/external-service-failure-handling.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Assessment Methods for Physical AI and Humanoid Robotics",
-    "permalink": "/docs/appendix/assessment-methods"
+    "permalink": "/./docs/appendix/assessment-methods"
   },
   "next": {
     "title": "Accessibility Statement",
-    "permalink": "/docs/accessibility-statement"
+    "permalink": "/./docs/accessibility-statement"
   }
 }
