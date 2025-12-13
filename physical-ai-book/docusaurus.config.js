@@ -5,7 +5,7 @@
 const config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'A Comprehensive Educational Book on Physical AI and Humanoid Robotics',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
   url: 'https://physical-ai-humanoid-robotics-book-flax.vercel.app/',
