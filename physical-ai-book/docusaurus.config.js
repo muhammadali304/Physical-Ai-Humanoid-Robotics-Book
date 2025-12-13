@@ -8,14 +8,14 @@ const config = {
   favicon: 'img/logo.svg',
 
   // Set the production url of your site here
-  url: 'https://physical-ai-humanoid-robotics-book-flax.vercel.app/',
+  url: 'https://muhammadali304.github.io',
   // Set the /<base>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<org-name>/<repo-name>/'
-  baseUrl: '/',
+  baseUrl: '/Physical-Ai-Humanoid-Robotics-Book',
 
   // GitHub pages deployment config.
-  organizationName: '', // Usually your GitHub org/user name.
-  projectName: '', // Usually your repo name.
+  organizationName: 'muhammadali304', // Usually your GitHub org/user name.
+  projectName: 'Physical-Ai-Humanoid-Robotics-Book', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
