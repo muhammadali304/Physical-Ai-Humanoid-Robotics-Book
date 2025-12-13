@@ -23,13 +23,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          # cache line remove kar di
           
       - name: Install dependencies
-        run: npm install  # ← npm ci se npm install kar diya
+        run: npm install
         
       - name: Build website
-        run: npm run build
+        run: npx docusaurus build  # ← npm run build se change karo
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
