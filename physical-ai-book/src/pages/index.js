@@ -113,7 +113,7 @@ export default function Home() {
                     <p>Learn the fundamentals of Physical AI, ROS 2, and environment setup.</p>
                   </div>
                   <div className="card__footer text--center">
-                    <Link className="button button--primary button--block" to="/docs/ros2-fundamentals/nodes-topics">
+                    <Link className="button button--primary button--block" to="/docs/setup/ubuntu-preparation">
                       Start Learning
                     </Link>
                   </div>
