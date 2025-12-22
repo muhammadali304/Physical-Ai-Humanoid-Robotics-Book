@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - DEBUG=${DEBUG:-False}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-*}
+      - RATE_LIMIT_REQUESTS_PER_MINUTE=${RATE_LIMIT_REQUESTS_PER_MINUTE:-60}
+      - MAX_REQUEST_SIZE_BYTES=${MAX_REQUEST_SIZE_BYTES:-1048576}
+      - MAX_QUESTION_LENGTH=${MAX_QUESTION_LENGTH:-2000}
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - app-network
+
+volumes:
+
+networks:
+  app-network:
+    driver: bridge

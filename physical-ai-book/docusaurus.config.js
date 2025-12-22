@@ -49,9 +49,8 @@ const config = {
       }),
     ],
   ],
-  // Add a custom page for the homepage
   plugins: [
-    // Add webpack configuration plugin to handle ES modules
+    // Add webpack configuration plugin to handle ES modules and environment variables
     function() {
       return {
         name: 'custom-webpack-config',
@@ -71,7 +70,15 @@ const config = {
             // This helps with module resolution
             resolve: {
               fullySpecified: false
-            }
+            },
+            // Define environment variables
+            plugins: [
+              new (require('webpack')).DefinePlugin({
+                'process.env': JSON.stringify({
+                  REACT_APP_BACKEND_URL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000'
+                })
+              })
+            ]
           };
         }
       };

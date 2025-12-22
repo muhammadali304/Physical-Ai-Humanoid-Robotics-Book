@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools"
+
+[project]
+name = "content-extraction-pipeline"
+version = "0.1.0"
+description = "A content extraction pipeline for the Physical AI project"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "beautifulsoup4>=4.12.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/content-extraction-pipeline"
+Repository = "https://github.com/your-username/content-extraction-pipeline"
+
+[tool.setuptools.packages.find]
+where = ["."]

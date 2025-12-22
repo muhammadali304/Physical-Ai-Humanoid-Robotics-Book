@@ -168,3 +168,21 @@
     margin-bottom: 1rem;
   }
 }
+
+/* QA Section Styles */
+.qaSection {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-color);
+}
+
+.qaSection .sectionTitle {
+  margin-bottom: 1.5rem;
+}
+
+.qaComponent {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
