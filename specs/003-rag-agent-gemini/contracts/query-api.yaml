@@ -1,0 +1,273 @@
+openapi: 3.0.0
+info:
+  title: RAG Agent API
+  description: API for the RAG Agent Backend with OpenAI Agents SDK using Gemini
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Development server
+  - url: https://rag-agent-api.example.com
+    description: Production server
+
+paths:
+  /query:
+    post:
+      summary: Process a user query against the RAG system
+      description: Submit a natural language query to be processed by the RAG agent using Gemini
+      operationId: processQuery
+      tags:
+        - Query
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QueryRequest'
+            example:
+              query: "What is the recommended approach for robot kinematics?"
+              session_id: "session-123"
+              user_id: "user-456"
+      responses:
+        '200':
+          description: Successful query response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QueryResponse'
+              example:
+                response: "The recommended approach for robot kinematics involves forward and inverse kinematics calculations..."
+                sources:
+                  - document_id: "doc-123"
+                    title: "Robotics Kinematics Guide"
+                    url: "https://example.com/docs/kinematics"
+                    page: 15
+                    relevance_score: 0.87
+                    text_snippet: "Kinematics is the branch of mechanics that deals with the motion of objects..."
+                session_id: "session-123"
+                tokens_used:
+                  input_tokens: 15
+                  output_tokens: 128
+                  total_tokens: 143
+                retrieval_info:
+                  retrieved_chunks: 3
+                  search_time_ms: 245.6
+                  top_k: 5
+        '400':
+          description: Bad request - invalid input
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized - invalid or missing authentication
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Forbidden - user lacks required permissions
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /health:
+    get:
+      summary: Health check endpoint
+      description: Check the health status of the RAG agent service
+      operationId: healthCheck
+      tags:
+        - Health
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    enum: [healthy]
+                  timestamp:
+                    type: string
+                    format: date-time
+                example:
+                  status: healthy
+                  timestamp: "2025-12-24T10:00:00Z"
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    QueryRequest:
+      type: object
+      required:
+        - query
+      properties:
+        query:
+          type: string
+          description: The user's natural language question
+          example: "What is the recommended approach for robot kinematics?"
+          minLength: 1
+          maxLength: 1000
+        session_id:
+          type: string
+          description: Identifier for conversation context
+          example: "session-123"
+          pattern: "^[a-zA-Z0-9-_]+$"
+        user_id:
+          type: string
+          description: Identifier for authenticated user
+          example: "user-456"
+          pattern: "^[a-zA-Z0-9-_]+$"
+        metadata:
+          type: object
+          description: Additional context or parameters for the query
+          additionalProperties: true
+
+    QueryResponse:
+      type: object
+      required:
+        - response
+        - sources
+      properties:
+        response:
+          type: string
+          description: The generated answer to the user's query
+          example: "The recommended approach for robot kinematics involves forward and inverse kinematics calculations..."
+        sources:
+          type: array
+          description: List of documents used in generating the response
+          items:
+            $ref: '#/components/schemas/SourceReference'
+        session_id:
+          type: string
+          description: Identifier for conversation context
+          example: "session-123"
+        tokens_used:
+          $ref: '#/components/schemas/TokenUsage'
+        retrieval_info:
+          $ref: '#/components/schemas/RetrievalInfo'
+
+    SourceReference:
+      type: object
+      required:
+        - document_id
+        - title
+        - relevance_score
+      properties:
+        document_id:
+          type: string
+          description: Unique identifier for the source document
+          example: "doc-123"
+        title:
+          type: string
+          description: Title of the source document
+          example: "Robotics Kinematics Guide"
+        url:
+          type: string
+          description: URL to the source document
+          format: uri
+          example: "https://example.com/docs/kinematics"
+        page:
+          type: integer
+          description: Page number in multi-page documents
+          minimum: 1
+          example: 15
+        relevance_score:
+          type: number
+          description: Score indicating how relevant this source was to the query
+          minimum: 0.0
+          maximum: 1.0
+          example: 0.87
+        text_snippet:
+          type: string
+          description: Snippet of text from the source
+          example: "Kinematics is the branch of mechanics that deals with the motion of objects..."
+
+    TokenUsage:
+      type: object
+      required:
+        - input_tokens
+        - output_tokens
+        - total_tokens
+      properties:
+        input_tokens:
+          type: integer
+          description: Number of tokens in the input query
+          minimum: 0
+          example: 15
+        output_tokens:
+          type: integer
+          description: Number of tokens in the generated response
+          minimum: 0
+          example: 128
+        total_tokens:
+          type: integer
+          description: Total tokens consumed
+          minimum: 0
+          example: 143
+
+    RetrievalInfo:
+      type: object
+      required:
+        - retrieved_chunks
+        - search_time_ms
+        - top_k
+      properties:
+        retrieved_chunks:
+          type: integer
+          description: Number of document chunks retrieved
+          minimum: 0
+          example: 3
+        search_time_ms:
+          type: number
+          description: Time taken for the retrieval process in milliseconds
+          minimum: 0
+          example: 245.6
+        top_k:
+          type: integer
+          description: Number of top results requested
+          minimum: 1
+          example: 5
+        relevance_threshold:
+          type: number
+          description: Minimum relevance score for inclusion
+          minimum: 0.0
+          maximum: 1.0
+          example: 0.5
+
+    ErrorResponse:
+      type: object
+      required:
+        - error
+        - error_code
+      properties:
+        error:
+          type: string
+          description: Human-readable error message
+          example: "Invalid query format"
+        error_code:
+          type: string
+          description: Machine-readable error code
+          example: "INVALID_QUERY"
+        details:
+          type: object
+          description: Additional error details
+          additionalProperties: true
+          example:
+            field: "query"
+            reason: "Query too long"

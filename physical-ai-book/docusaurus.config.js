@@ -75,7 +75,9 @@ const config = {
             plugins: [
               new (require('webpack')).DefinePlugin({
                 'process.env': JSON.stringify({
-                  REACT_APP_BACKEND_URL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000'
+                  REACT_APP_BACKEND_URL: process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000',
+                  RAG_API_BASE_URL: process.env.RAG_API_BASE_URL || 'http://localhost:8000/api/v1',
+                  RAG_API_KEY: process.env.RAG_API_KEY || ''
                 })
               })
             ]

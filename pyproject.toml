@@ -33,3 +33,8 @@ Repository = "https://github.com/your-username/content-extraction-pipeline"
 
 [tool.setuptools.packages.find]
 where = ["."]
+
+[tool.uv.workspace]
+members = [
+    "backend",
+]

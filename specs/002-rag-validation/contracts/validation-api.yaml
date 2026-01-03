@@ -1,0 +1,381 @@
+openapi: 3.0.0
+info:
+  title: RAG Validation API
+  description: API for validating RAG pipeline retrieval functionality
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+
+paths:
+  /validation/search:
+    post:
+      summary: Validate semantic search functionality
+      description: Performs semantic search and validates results
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchQuery'
+      responses:
+        '200':
+          description: Validation results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationResult'
+        '400':
+          description: Invalid request
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
+
+  /validation/batch:
+    post:
+      summary: Run batch validation
+      description: Execute multiple validation queries in batch
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchValidationRequest'
+      responses:
+        '200':
+          description: Batch validation results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationReport'
+        '400':
+          description: Invalid request
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
+
+  /validation/test-suite:
+    post:
+      summary: Execute validation test suite
+      description: Run a predefined set of validation tests
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TestSuiteRequest'
+      responses:
+        '200':
+          description: Test suite results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationReport'
+        '400':
+          description: Invalid request
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
+
+  /validation/reports:
+    get:
+      summary: List validation reports
+      description: Retrieve list of available validation reports
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 20
+        - name: offset
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 0
+      responses:
+        '200':
+          description: List of validation reports
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reports:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ValidationReport'
+                  total:
+                    type: integer
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
+
+  /validation/reports/{reportId}:
+    get:
+      summary: Get validation report
+      description: Retrieve a specific validation report
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: reportId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: format
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [json, csv]
+            default: json
+      responses:
+        '200':
+          description: Validation report
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationReport'
+        '401':
+          description: Unauthorized
+        '404':
+          description: Report not found
+        '500':
+          description: Internal server error
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    SearchQuery:
+      type: object
+      required:
+        - query_text
+      properties:
+        query_text:
+          type: string
+          description: The validation query text
+          example: "What are the key features of this system?"
+        top_k:
+          type: integer
+          description: Number of results to return
+          default: 5
+          minimum: 1
+          maximum: 100
+        min_score:
+          type: number
+          description: Minimum relevance score threshold
+          default: 0.0
+          minimum: 0.0
+          maximum: 1.0
+        filters:
+          type: object
+          description: Additional filtering parameters
+          properties:
+            source_url:
+              type: string
+              description: Filter by source URL
+            section:
+              type: string
+              description: Filter by section heading
+
+    SearchResult:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the result
+        score:
+          type: number
+          description: Relevance score between 0.0 and 1.0
+          minimum: 0.0
+          maximum: 1.0
+        content:
+          type: string
+          description: Raw content of the retrieved chunk
+        metadata:
+          $ref: '#/components/schemas/ResultMetadata'
+        query_id:
+          type: string
+          description: Reference to the original query
+
+    ResultMetadata:
+      type: object
+      properties:
+        url:
+          type: string
+          description: Source URL of the content
+        section:
+          type: string
+          description: Section heading
+        chunk_index:
+          type: integer
+          description: Index of the chunk within the document
+        source_title:
+          type: string
+          description: Title of the source document
+
+    ValidationResult:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the validation result
+        query:
+          $ref: '#/components/schemas/SearchQuery'
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchResult'
+        relevance_metrics:
+          type: object
+          description: Accuracy and relevance measurements
+          properties:
+            accuracy:
+              type: number
+              description: Overall accuracy score
+            precision:
+              type: number
+              description: Precision score
+            recall:
+              type: number
+              description: Recall score
+        metadata_validation:
+          type: object
+          description: Metadata integrity check results
+          properties:
+            url_integrity:
+              type: number
+              description: URL integrity score
+            section_integrity:
+              type: number
+              description: Section integrity score
+            completeness:
+              type: number
+              description: Completeness of metadata
+        execution_time:
+          type: number
+          description: Time taken for validation in seconds
+        status:
+          type: string
+          description: Status of validation
+          enum: [success, partial, failed]
+        created_at:
+          type: string
+          format: date-time
+          description: Timestamp of validation execution
+
+    ValidationReport:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the report
+        test_suite:
+          type: string
+          description: Name of the test suite executed
+        total_tests:
+          type: integer
+          description: Total number of validation tests executed
+        passed_tests:
+          type: integer
+          description: Number of tests that passed
+        failed_tests:
+          type: integer
+          description: Number of tests that failed
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationResult'
+        summary_metrics:
+          type: object
+          description: Overall performance and accuracy metrics
+          properties:
+            avg_accuracy:
+              type: number
+              description: Average accuracy across all tests
+            avg_precision:
+              type: number
+              description: Average precision across all tests
+            avg_recall:
+              type: number
+              description: Average recall across all tests
+            avg_response_time:
+              type: number
+              description: Average response time across all tests
+        status:
+          type: string
+          description: Overall validation status
+          enum: [pass, fail, warning]
+        created_at:
+          type: string
+          format: date-time
+          description: Timestamp of report generation
+        duration:
+          type: number
+          description: Total time taken for validation suite execution
+
+    BatchValidationRequest:
+      type: object
+      required:
+        - queries
+      properties:
+        queries:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchQuery'
+        batch_size:
+          type: integer
+          description: Number of queries to process in each batch
+          default: 10
+          minimum: 1
+          maximum: 100
+        concurrency:
+          type: integer
+          description: Number of concurrent validation workers
+          default: 5
+          minimum: 1
+          maximum: 20
+
+    TestSuiteRequest:
+      type: object
+      required:
+        - suite_name
+      properties:
+        suite_name:
+          type: string
+          description: Name of the predefined test suite
+          example: "basic_accuracy_tests"
+        batch_size:
+          type: integer
+          description: Number of tests to run in each batch
+          default: 10
+          minimum: 1
+          maximum: 100
+        concurrency:
+          type: integer
+          description: Number of concurrent test workers
+          default: 5
+          minimum: 1
+          maximum: 20
+        filters:
+          type: object
+          description: Filters to apply to the test suite
